@@ -1,0 +1,40 @@
+.container-tasks {
+  padding: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+.title-tasks {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+.linkButton {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.listItem {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+.button-tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media(max-width:480px) {
+  .container-tasks {
+    padding: 20px;
+  }
+}

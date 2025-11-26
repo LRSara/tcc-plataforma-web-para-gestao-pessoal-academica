@@ -1,0 +1,21 @@
+
+.containerA {
+  padding-top: 65px;
+  color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-left: 5%;
+  background-color: #fdefe3;
+}
+
+.app {
+  background-color: #fdefe3;
+}
+
+@media(max-width: 1500px) {
+  .containerA {
+  width: 100%;
+  margin-left:0%;
+  };
+}

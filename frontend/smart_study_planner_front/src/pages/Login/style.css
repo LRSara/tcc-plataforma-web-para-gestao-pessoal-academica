@@ -1,0 +1,144 @@
+/* Fundo da página */
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 100vh;
+  /* background: linear-gradient(135deg, #f75f00, #ffffff); */
+  background-color: #fdefe3;
+  font-family: 'Nunito', sans-serif;
+  
+}
+
+/* Container do formulário */
+.login-container {
+  background: #fdefe3;
+  padding: 40px 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px #31303028;
+  border: 1px solid #313030;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Título */
+.login-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #313030;
+  text-align: center;
+}
+
+.login-text-header {
+  font-weight: 700;
+  color: #313030;
+}
+
+/* Formulário */
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.login-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #313030;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.login-input {
+  padding: 12px 14px;
+  border: 1px solid #313030;
+  border-radius: 8px;
+  color: #313030;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  background-color: #ffd1a9; /* mesmo do fundo da página ou container */
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 0 0px 1000px #ffd1a9 inset; /* remove autofill azul no Chrome */
+  box-shadow: none;
+}
+
+/* Autofill Chrome */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #ffd1a9 inset !important;
+  -webkit-text-fill-color: #313030 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.login-input:focus {
+  outline: none; /* remove o contorno azul padrão do navegador */
+  border-color: #ff914d; /* mantém sua borda laranja */
+  box-shadow: 0 0 0 3px #ff914d5f; /* sombra suave laranja opcional */
+}
+
+
+/* Botão */
+.login-button {
+  padding: 12px 0;
+  background-color: #ff914d;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: #ffad7e;
+}
+
+.login-button:disabled {
+  background-color: #ffad7e;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.login-footer {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.login-link {
+  color: #ff914d;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.login-link:hover {
+  color: #ff914d;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px 20px;
+    margin: 30px;
+  }
+}

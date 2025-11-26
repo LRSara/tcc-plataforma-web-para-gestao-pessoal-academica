@@ -1,0 +1,62 @@
+.content {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  padding-top: 50px;
+  width: 100%;
+}
+.carousel {
+  margin-bottom: 40px;
+  /* padding: 0; */
+  justify-content: center;
+  flex-direction: column;
+  width: 1110px;
+  display: flex;
+  margin: 0px auto;
+}
+.addButtons {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin: 20px auto;
+  width: 1110px;
+  gap: 10px;
+}
+.addTask {
+  background: #BFFFB7;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12;
+  cursor: pointer;
+  font-weight: 600;
+}
+.addNote {
+  background: #FFF799;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    .addButtons {
+        display: none;
+    }
+    .carousel{
+      width: 95%;
+    }
+}
+
+@media (max-width: 1201px) {
+    /* .addButtons {
+        display: none;
+    } */
+    .carousel{
+      width: 95%;
+    }
+    /* .addButtons{
+      padding-right: 60px;
+    } */
+}

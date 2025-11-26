@@ -1,0 +1,78 @@
+.custom-select {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  font-family: "Inter", sans-serif;
+}
+
+.select-display {
+  background: #fbc9abff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #ff914d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.2s ease;
+}
+
+.select-display:hover {
+  border: 1px solid #ff914d;
+}
+
+.placeholder {
+  color: #ff914d;
+  background-color: #fbc9abff !important;
+  cursor: default !important;
+  font-weight: 500 !important;
+  opacity: 5 !important;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.options {
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 4px);
+  background: #fff;
+  border: 1px solid #fbc9abff !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  animation: fadeIn 0.2s ease;
+  color: black;
+}
+
+.option {
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.option:hover {
+  background: #f5f5f5;
+}
+
+.option.selected {
+  background: #e8f0fe;
+  font-weight: 500;
+}
+
+.option.disabled {
+  color: #aaa;
+  cursor: default;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

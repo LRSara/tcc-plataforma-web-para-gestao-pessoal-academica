@@ -1,0 +1,185 @@
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  border-right: 1px solid black;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #fdefe3;
+  overflow: hidden;
+  margin: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+/* ABERTO */
+.sidebar.open {
+  width: 20%;
+  align-items: flex-start;
+}
+
+/* FECHADO */
+.sidebar.closed {
+  width: 5%;
+  align-items: center;
+}
+
+/* Top */
+.sidebar .top {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+/* Menu Button */
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Icon container */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Fechado */
+.icon-container.closed {
+  align-items: center;
+}
+
+/* Aberto */
+.icon-container.opened {
+  margin-left: 20px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.label {
+  margin: 0;
+  opacity: 1;
+}
+
+/* Links */
+.link {
+  text-decoration: none;
+  display: flex;
+  color: black;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 1500px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* === FIM DO SEU CSS ORIGINAL === */
+
+
+/* ========================================================= */
+/* === CSS MOBILE (ADICIONADO sem tocar no web) ============ */
+/* ========================================================= */
+
+@media (max-width: 1500px) {
+
+  /* Sidebar mobile aparece como overlay */
+  .sidebar {
+    display: flex !important;
+    width: 0;
+    border-right: none;
+    height: 100vh;
+    background: #fdefe3de;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 99999;
+  }
+
+  .sidebar.closed {
+    width: 0;
+  }
+
+  /* Ícone menu flutuante (hamburger) */
+  .mobile-floating-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 100000;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: #fdefe3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* Quando o menu abre, o botão some */
+  .sidebar.open ~ .mobile-floating-btn {
+    display: none;
+  }
+
+  /* Conteúdo centralizado no mobile */
+  .icon-container {
+    margin-left: 20px !important;
+    align-items: flex-start !important;
+  }
+
+  .icon {
+    padding-left: 5px;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .top {
+    border-bottom: none !important;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .sidebar.open {
+    width: 40%; /* Largura mobile */
+  }
+
+}
+
+@media (min-width: 1001px) {
+
+  .sidebar.open {
+    width: 20%; /* Largura mobile */
+  }
+
+}
+
+
+@media (max-width: 501px){
+  .sidebar.open {
+    width: 70%; /* Largura mobile */
+  }
+
+}

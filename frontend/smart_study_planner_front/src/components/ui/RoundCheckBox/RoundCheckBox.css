@@ -1,0 +1,36 @@
+.round-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.round-checkbox input {
+  display: none; /* remove o checkbox nativo */
+}
+
+.checkmark {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid rgb(240, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.check-icon {
+  color: rgb(240, 238, 238); /* check cinza pálido padrão */
+  font-size: 16px;
+  transition: color 0.25s ease;
+}
+
+.checkmark.checked {
+  background-color: #50c187ff; /* azul ao marcar */
+  border-color: #50c187ff;
+}
+
+.checkmark.checked .check-icon {
+  color: white; /* check branco quando marcado */
+}

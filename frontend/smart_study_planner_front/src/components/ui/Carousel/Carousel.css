@@ -1,0 +1,80 @@
+.homecarousel-card {
+  display: flex;
+  flex-direction: column; /* empilha texto e data */
+  justify-content: center; /* centraliza verticalmente */
+  align-items: center; /* centraliza horizontalmente */
+  border-radius: 8px;
+  padding: 30px 40px;
+  background-color: #ff914d;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box; /* importante para padding não quebrar layout */
+  text-align: center; /* centraliza texto dentro do card */
+  height: 300px;
+}
+
+.homecarousel-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 20px;
+  word-break: break-word;
+}
+
+.homecarousel-dateWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center; /* centraliza ícone e data horizontalmente */
+}
+
+.homecarousel-icon {
+  font-size: 20px;
+}
+
+.homecarousel-dateText {
+  font-size: 1.5rem;
+}
+
+.homecarousel-dateText-slide {
+  font-size: 2rem;
+}
+
+.homecarousel-icon-slide {
+  font-size: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .homecarousel-card {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homecarousel-card {
+    padding: 24px 16px;
+  }
+
+  .homecarousel-icon,
+  .homecarousel-dateText {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homecarousel-card {
+    padding: 16px 12px;
+  }
+
+  .homecarousel-icon,
+  .homecarousel-dateText {
+    font-size: 16px;
+  }
+
+  .homecarousel-text {
+    font-size: 1.5rem;
+  }
+}
