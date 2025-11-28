@@ -2,17 +2,17 @@
 
 Esse sistema, é o meu trabalho de conclusão de curso (TCC), é uma plataforma web criada para auxiliar estudantes na organização da vida acadêmica. 
 O sistema permite gerenciar tarefas, resumos, prazos importantes e acompanhar atividades do dia a dia de forma simples e intuitiva.
-Além disso, possui fluxo completo de autenticação e recuperação de senha via e-mail.
+Além disso, possui fluxo de autenticação e recuperação de senha via e-mail.
 
 📌 O que o projeto contém
 
 - Backend (Laravel)
 
-- API completa para autenticação, cadastro, tarefas e notificações
+- API para autenticação, cadastro, tarefas e notificações
 
 - Envio de e-mails, incluindo link de redefinição de senha
 
-- Validações, tokens e fluxo seguro de recuperação
+- Validações, tokens e fluxo de recuperação
 
 - Conexão com banco de dados e migrações
 
